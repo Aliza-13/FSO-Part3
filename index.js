@@ -35,6 +35,7 @@ let persons = [
 
 //POST reitti jolla voidaan lisätä uusi numero
 app.post('/api/persons', (req, res) => {
+  console.log(req.body)
   const body = req.body
 
   if (!req.body || !req.body.name ) {
